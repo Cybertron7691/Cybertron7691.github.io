@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Pare-feu - Cybertron7691</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
 
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4 shadow-md">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-400">← Retour à l'accueil</a>
+            <span class="text-gray-400 font-semibold">Fiche Réalisation Pro</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto my-12 px-4">
+        <!-- En-tête du projet -->
+        <div class="mb-8">
+            <span class="text-xs font-semibold bg-green-500/20 text-green-400 px-3 py-1 rounded-full">Stage - 1ère Année</span>
+            <h1 class="text-3xl font-extrabold mt-3">Configuration et déploiement d'un pare-feu d'entreprise</h1>
+            <p class="text-gray-400 mt-2">Technologie principale : [Ex: pfSense / Stormshield / Fortinet]</p>
+        </div>
+
+        <!-- 1. Le Contexte et Besoin -->
+        <section class="mb-8 bg-gray-800 p-6 rounded-lg border border-gray-700">
+            <h2 class="text-xl font-bold text-blue-400 mb-3">1. Contexte et Expression du Besoin</h2>
+            <p class="text-gray-300 leading-relaxed">
+                Au cours de mon premier stage, l'entreprise cliente/d'accueil avait besoin de sécuriser son réseau local contre les intrusions extérieures et de filtrer les accès internet des collaborateurs. L'objectif était de remplacer une solution obsolète par un pare-feu moderne afin d'assurer la confidentialité et l'intégrité des flux réseaux.
+            </p>
+        </section>
+
+        <!-- 2. Les Tâches Réalisées -->
+        <section class="mb-8 bg-gray-800 p-6 rounded-lg border border-gray-700">
+            <h2 class="text-xl font-bold text-blue-400 mb-3">2. Démarche Technique & Réalisations</h2>
+            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                <li><strong class="text-white">Installation & Initialisation :</strong> Déploiement de la solution sur une machine dédiée, configuration des interfaces réseaux (WAN pour internet, LAN pour le réseau local, et DMZ pour les serveurs publics).</li>
+                <li><strong class="text-white">Politique de filtrage (Règles) :</strong> Création de règles de pare-feu strictes basées sur le principe du moindre privilège (tout bloquer par défaut, n'autoriser que le nécessaire : HTTP, HTTPS, DNS).</li>
+                <li><strong class="text-white">NAT / Port Forwarding :</strong> Configuration de la translation d'adresses pour permettre aux serveurs internes d'être accessibles de manière sécurisée depuis l'extérieur.</li>
+                <li><strong class="text-white">Suivi et Logs :</strong> Mise en place de tableaux de bord pour analyser les logs de trafic et détecter les anomalies ou tentatives de blocage.</li>
+            </ul>
+        </section>
+
+        <!-- 3. Livrables -->
+        <section class="mb-8 bg-gray-800 p-6 rounded-lg border border-gray-700">
+            <h2 class="text-xl font-bold text-blue-400 mb-3">3. Livrables de l'activité</h2>
+            <div class="flex flex-wrap gap-4">
+                <div class="bg-gray-900 p-4 rounded border border-gray-600 flex-1 min-w-[200px]">
+                    <span class="block text-sm font-bold text-white">Documentation Technique</span>
+                    <span class="text-xs text-gray-400 block mb-2">Procédure d'installation et règles de filtrage.</span>
+                    <span class="text-xs text-blue-400 font-medium">[Fichier PDF à l'oral]</span>
+                </div>
+                <div class="bg-gray-900 p-4 rounded border border-gray-600 flex-1 min-w-[200px]">
+                    <span class="block text-sm font-bold text-white">Schéma Réseau (Topologie)</span>
+                    <span class="text-xs text-gray-400 block mb-2">Architecture avant/après intégration du pare-feu.</span>
+                    <span class="text-xs text-blue-400 font-medium">[Fichier PDF à l'oral]</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
