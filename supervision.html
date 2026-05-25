@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Supervision/Gestion de Parc - Cybertron7691</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <nav class="bg-gray-800 p-4 shadow-md">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-400">← Retour à l'accueil</a>
+            <span class="text-gray-400 font-semibold">Fiche Réalisation Pro</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto my-12 px-4">
+        <div class="mb-8">
+            <span class="text-xs font-semibold bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full">Stage - 2ème Année</span>
+            <h1 class="text-3xl font-extrabold mt-3">Gestion de parc informatique et centralisation des incidents (GLPI)</h1>
+            <p class="text-gray-400 mt-2">Technologie principale : GLPI / GLPI Agent (ou Zabbix/Centreon)</p>
+        </div>
+
+        <section class="mb-8 bg-gray-800 p-6 rounded-lg border border-gray-700">
+            <h2 class="text-xl font-bold text-blue-400 mb-3">1. Contexte et Expression du Besoin</h2>
+            <p class="text-gray-300 leading-relaxed">
+                Durant mon stage de deuxième année, l'entreprise faisait face à un manque de visibilité sur son infrastructure (inventaire matériel géré manuellement sur Excel) et à une absence de suivi des demandes d'assistance (Helpdesk). L'objectif était de déployer une solution centralisée pour automatiser la remontée de l'inventaire et structurer le support utilisateur.
+            </p>
+        </section>
+
+        <section class="mb-8 bg-gray-800 p-6 rounded-lg border border-gray-700">
+            <h2 class="text-xl font-bold text-blue-400 mb-3">2. Démarche Technique & Réalisations</h2>
+            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                <li><strong class="text-white">Installation du serveur :</strong> Déploiement de la solution GLPI sur un serveur Linux (Ubuntu Server) avec la stack LAMP (Linux, Apache, MySQL/MariaDB, PHP).</li>
+                <li><strong class="text-white">Configuration du Helpdesk :</strong> Création des profils utilisateurs (Techniciens, Demandeurs), définition des catégories de tickets et des règles d'attribution automatique.</li>
+                <li><strong class="text-white">Automatisation de l'inventaire :</strong> Configuration du plugin d'inventaire natif et préparation du déploiement des agents GLPI sur les postes de travail.</li>
+                <li><strong class="text-white">Déploiement en masse :</strong> Automatisation de l'installation de l'agent GLPI sur le parc Windows via une stratégie de groupe (GPO) Active Directory ou script d'automatisation.</li>
+            </ul>
+        </section>
+
+        <section class="mb-8 bg-gray-800 p-6 rounded-lg border border-gray-700">
+            <h2 class="text-xl font-bold text-blue-400 mb-3">3. Livrables de l'activité</h2>
+            <div class="flex flex-wrap gap-4">
+                <div class="bg-gray-900 p-4 rounded border border-gray-600 flex-1 min-w-[200px]">
+                    <span class="block text-sm font-bold text-white">Rapport de Déploiement</span>
+                    <span class="text-xs text-gray-400 block mb-2">Procédure d'installation LAMP et configuration GLPI.</span>
+                    <a href="docs/stage2/doc_technique_glpi.pdf" target="_blank" class="text-sm text-blue-400 hover:underline font-medium">📄 Télécharger le PDF</a>
+                </div>
+                <div class="bg-gray-900 p-4 rounded border border-gray-600 flex-1 min-w-[200px]">
+                    <span class="block text-sm font-bold text-white">Guide Utilisateur (Helpdesk)</span>
+                    <span class="text-xs text-gray-400 block mb-2">Fiche synthétique pour expliquer la création de tickets aux utilisateurs.</span>
+                    <a href="docs/stage2/guide_utilisateur_ticket.pdf" target="_blank" class="text-sm text-blue-400 hover:underline font-medium">📄 Voir le guide</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
